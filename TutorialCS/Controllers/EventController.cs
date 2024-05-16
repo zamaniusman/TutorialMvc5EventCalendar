@@ -60,7 +60,7 @@ namespace TutorialCS.Controllers
             DateTime end = Convert.ToDateTime(form["End"]);
             string text = form["Text"];
             int resource = Convert.ToInt32(form["Resource"]);
-            //string recurrence = form["Recurrence"];
+            string recurrence = form["Recurrence"];
 
             var toBeCreated = new Event() { Start = start, End = end, Text = text};
             dc.Events.InsertOnSubmit(toBeCreated);
