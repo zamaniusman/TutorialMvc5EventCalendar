@@ -61,6 +61,9 @@ namespace TutorialCS.Controllers
             string text = form["Text"];
             int resource = Convert.ToInt32(form["Resource"]);
             string recurrence = form["Recurrence"];
+            string recurrence1 = form["Recurrence"];
+            string recurrence2 = form["Recurrence"];
+            string recurrence3 = form["Recurrence"];
 
             var toBeCreated = new Event() { Start = start, End = end, Text = text};
             dc.Events.InsertOnSubmit(toBeCreated);
